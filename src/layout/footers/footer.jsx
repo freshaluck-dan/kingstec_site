@@ -139,7 +139,7 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-12 col-lg-12">
                                 <div className="tp-footer-copyright-inner">
-                                    <p><CopyRight /> </p>
+                                    <CopyRight />
                                 </div>
                             </div>
                         </div>

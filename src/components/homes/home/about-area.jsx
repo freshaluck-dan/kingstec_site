@@ -75,7 +75,7 @@ const AboutArea = () => {
                                 <div className="tp-about-item-wrapper">
                                     <div className='row'>
                                         {about_data.map((item, i) =>
-                                            <div className='col-lg-3'>
+                                            <div key={i} className='col-lg-3'>
                                                 <div className="tp-about-item-thumb">
                                                     <Image src={item.img} alt="theme-pure" />
                                                 </div>
