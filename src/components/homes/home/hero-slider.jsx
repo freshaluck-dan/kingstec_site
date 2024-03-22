@@ -15,6 +15,7 @@ import shape_4 from "@assets/img/hero/shape-4.png";
 import shape_5 from "@assets/img/hero/shape-7.png";
 import service_shape from "@assets/img/hero/shape-5.png";
 import service_quote from "@assets/img/hero/quot.png";
+import Carousel, { CarouselItem } from './component/Carousel';
 
 // slider setting 
 const setting = {
@@ -34,7 +35,25 @@ const setting = {
 const slider_data = [
   {
     id: 1,
-    bg_img: "/assets/img/heroImg.jpg",
+    bg_img: "/assets/img/banner.jpg",
+    sub_title_1: "best",
+    sub_title_2: "it solutions",
+    hero_title_1: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
+    hero_title_2: "",
+    // hero_support: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
+  },
+  {
+    id: 2,
+    bg_img: "/assets/img/prog.jpg",
+    sub_title_1: "best",
+    sub_title_2: "it solutions",
+    hero_title_1: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
+    hero_title_2: "",
+    // hero_support: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
+  },
+  {
+    id: 3,
+    bg_img: "/assets/img/prog1.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
     hero_title_1: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
@@ -65,38 +84,32 @@ const HeroSlider = () => {
       <section className="tp-hero-area tp-hero-space pb-95">
         <div className="tp-hero-wrapper p-relative">
           <div className="hero-active-1 swiper-container">
-            <Swiper {...setting} loop={isLoop} modules={[Navigation, EffectFade]}>
-              {slider_data.map((item, i) => (
-                <SwiperSlide key={i}>
-                  <div className="tp-hero-inner-1">
-                    <div className="container">
-                      <div className="tp-hero-1">
-                        <div className='row'>
-                          <div className='col-lg-7'>
-                            <div className="tp-hero-bg"
-                              style={{ backgroundImage: `url(${item.bg_img})` }}
-                            ></div>
-                          </div>
-                          <div className="col-lg-5">
-                            <div className="tp-hero-content">
-                              <div className="tp-hero-title-wrapper">
-                                <h4 className="tp-hero-title">
-                                  {item.hero_title_1} <LineArrow />
-                                  <br />{" "}
-                                </h4>
-                                <p className="title-text-transparent">
-                                  {item.hero_support}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            <div className="tp-hero-inner-1">
+              <div className='row'>
+                <div className='col-lg-6'>
+                  <Carousel>
+                    {slider_data.map((item, i) => (
+                      // <CarouselItem key={i} width='100%'>
+                      <img key={i} className="tp-hero-bg" src={item.bg_img} style={{ width: '100%', height: '100%' }} />
+                      // </CarouselItem>
+                    ))}
+                  </Carousel>
+                </div>
+
+
+                <div className="col-lg-6">
+                  <div className="tp-hero-content">
+                    <div className="tp-hero-title-wrapper">
+                      <h4 className="tp-hero-title" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                        Empowering Tomorrow, Today: Transforming <br /> Tech into Tangible Solutions <LineArrow />
+                        <br />{" "}
+                      </h4>
+
                     </div>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="tp-hero-service"

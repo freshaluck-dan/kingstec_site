@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import icon from "@assets/img/icon/icon-1.png";
+import icon from "@assets/img/logo.jpeg";
 import Image from 'next/image';
 import Slider from "react-slick";
 
@@ -42,7 +42,7 @@ const SliderArea = () => {
                             <div key={i} className="tp-text-item">
                                 <div className="tp-text-slider-wrapper">
                                     <div className="tp-text-slider-item d-flex align-items-center">
-                                        <Image src={icon} alt="theme-pure" />
+                                        <Image src={icon} width={50} alt="theme-pure" />
                                         <h3 className="text-title">{item.title}</h3>
                                     </div>
                                 </div>
