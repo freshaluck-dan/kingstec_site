@@ -38,13 +38,13 @@ const service_data = [
         description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
 
     },
-    {
-        id: 5, 
-        alphabet: "D",
-        title: <>Data Backup <br /> and Restoration</>,
-        img: service_img_2,
-        description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
+    // {
+    //     id: 5, 
+    //     alphabet: "D",
+    //     title: <>Data Backup <br /> and Restoration</>,
+    //     img: service_img_2,
+    //     description: <>As far as we might be concerned making an extraordinary As the complexity as </>,        
 
-    },
+    // },
 ]
 export default service_data

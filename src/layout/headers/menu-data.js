@@ -23,18 +23,18 @@ const menu_data = [
     link: "/about",
     active: "",
   },   
-  {
-    id: 3,
-    mega_menu: false,
-    has_dropdown: true,
-    title: "Our Services",
-    link: "/service",
-    active: "",
-    sub_menus: [
-      { link: "/service", title: "Service" },
-      { link: "/service-details", title: "Services Details" }, 
-    ],
-  },
+  // {
+  //   id: 3,
+  //   mega_menu: false,
+  //   has_dropdown: true,
+  //   title: "Our Services",
+  //   link: "/service",
+  //   active: "",
+  //   sub_menus: [
+  //     { link: "/service", title: "Service" },
+  //     { link: "/service-details", title: "Services Details" }, 
+  //   ],
+  // },
   // {
   //   id: 4,
   //   mega_menu: false,

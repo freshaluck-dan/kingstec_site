@@ -40,9 +40,9 @@ const SupportArea = () => {
                     <div key={i} className="col-lg-4">
                         <div className="tp-support-feature-item d-flex p-relative fadeRight">
                         <div className="tp-support-feature-counter">
-                            <div className="tp-support-feature-thumb">
+                            {/* <div className="tp-support-feature-thumb">
                                 <img src="/assets/img/brand/shape-2.png" alt="theme-pure" />
-                            </div>
+                            </div> */}
                             <h3 className="support-feature-title"><span data-purecounter-duration="4" className="purecounter">
                                 <Count number={item.count}  text={item.symbol}  />
                             </span></h3>

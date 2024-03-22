@@ -43,35 +43,13 @@ const HeaderOne = () => {
                      <div className="col-xxl-6 col-xl-8">
                         <div className="tp-header-top-info">
                            <ul>
-                              {/* <li>
-                                 <a href="https://www.google.com/maps/@36.0758266,-79.4558848,17z"
-                                    target="_blank"><span>
-                                       <i className="fa-sharp fa-solid fa-location-dot"></i>
-                                    </span>734 H, Bryan Burlington, NC 27215</a>
-                              </li> */}
+
                               <li>
                                  <a href="mailto:technix@support.com"><span>
                                     <i className="fa-solid fa-envelope"></i></span>kingstec92@gmail.com
                                  </a>
                               </li>
-                              {/* <li>
-                                 <div className="tp-header-lang-wrapper d-flex align-items-center">
-                                    <div className="tp-header-lang-img">
-                                       <Image src={LangLogo} alt="theme-pure" />
-                                    </div>
-                                    <div className="tp-header-lang">
-                                       <span className="tp-header-lang-selected-lang tp-lang-toggle"
-                                          id="tp-header-lang-toggle"
-                                          ref={langToggleRef}>English</span>
 
-                                       <ul className={`tp-header-lang-list tp-lang-list ${isLangListOpen ? 'tp-lang-list-open' : ''}`}>
-                                          <li>Spanish</li>
-                                          <li>English</li>
-                                          <li>Canada</li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </li> */}
                            </ul>
                         </div>
                      </div>
@@ -80,11 +58,11 @@ const HeaderOne = () => {
                            <div className="header-call">
                               <a href="tel:01310-069824"><i className="fa-solid fa-phone"></i> +2349091748769</a>
                            </div>
-                           {/* <div className="header-social d-xxl-block d-none">
+                           <div className="header-social d-xxl-block d-none">
                               <Link href="#"><i className="fa-brands fa-facebook"></i> Facebook</Link>
                               <Link href="#"><i className="fa-brands fa-twitter"></i> Skype</Link>
                               <Link href="#"><i className="fa-brands fa-linkedin"></i> Linkedin</Link>
-                           </div> */}
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -97,13 +75,6 @@ const HeaderOne = () => {
                      <div className="row gx-0 align-items-center">
                         <div className="col-xxl-3 col-xl-3">
                            <div className="tp-header-main-left d-flex align-items-center p-relative">
-                              {/* <div className="tp-header-hamburger-btn offcanvas-open-btn" 
-                               style={{backgroundImage: `url(/assets/img/icon/header-hamburger-shape.png)`}}
-                               onClick={() => setSidebarOpen(true)}>
-                                 <button className="hamburger-btn">
-                                    <span> <HamburgerBtn /></span>
-                                 </button>
-                                 </div> */}
                               <div className="tp-header-logo">
                                  <Link href="/">
                                     <Image src={Logo} width={170} alt="theme-pure" />
@@ -111,8 +82,8 @@ const HeaderOne = () => {
                               </div>
                            </div>
                         </div>
-                        <div className="col-xxl-6 col-xl-6 d-none d-xl-block">
-                           <div className="tp-main-menu-area counter d-flex align-items-center">
+                        <div className="col-xxl-9 col-xl-9 d-none d-xl-block">
+                           <div className="tp-main-menu-area counter" style={{ display: "flex", justifyContent: "end" }}>
                               <div className="tp-main-menu menu-icon">
                                  <span className="header-icon"><HomeIcon /></span>
                                  <nav id="tp-mobile-menu">
@@ -121,23 +92,14 @@ const HeaderOne = () => {
                               </div>
                            </div>
                         </div>
-                        <div className="col-xxl-3 col-xl-3">
-                           <div className="tp-header-main-right d-flex align-items-center justify-content-xl-end">
-                              {/* <div className="tp-header-search search-open-btn d-none d-xxl-block">
-                                 <button onClick={() => setSearchOpen(true)}><i className="fa-regular fa-magnifying-glass"></i></button>
-                              </div> */}
-                              <div className="tp-header-btn d-none d-xl-block pl-40">
-                                 <Link className="tp-btn" href="/contact">Get Started Today</Link>
-                              </div>
-                           </div>
-                        </div>
+
                      </div>
                   </div>
                </div>
             </div>
          </header>
          {/* <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} /> */}
-         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+         {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
       </>
    );
 };

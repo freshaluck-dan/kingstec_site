@@ -98,64 +98,7 @@ const ServiceArea = () => {
    return (
       <>
          <div className="tp-service-funfact-box">
-
-            <section className="tp-service-area pt-85 pb-50">
-               <div className="container-fluid">
-                  <div className="row">
-                     <div className="col-lg-12">
-                        <div className="tp-service-title-wrapper text-center">
-                           {/* <span className="tp-section-title__pre">
-                              service <span className="title-pre-color">IT Solutions</span>
-                              <AngleArrow />
-                           </span> */}
-                           <h3 className="tp-section-title">All Professional <i>IT Solutions</i> & Services
-                              <span className="title-center-shape">
-                                 <LineArrowTwo />
-                              </span>
-                           </h3>
-                        </div>
-                     </div>
-
-                     <div className="tp-service-slider-wrapper">
-                        {/* <Splide options={setting} ref={splideRef} */}
-                        {/* className="service-active splide"> */}
-                        <div className='row'>
-                           {service_data.map((item, i) =>
-                              // <SplideSlide key={item.id}>
-                              <div key={i} className='col-lg-3'>
-                                 <div className="tp-service-wrapper p-relative mb-55">
-                                    <h3 className="service-title">{item.title}</h3>
-                                    <div className="tp-service-icon">
-                                       <Image src={item.img} alt="theme-pure" />
-                                    </div>
-                                    <p className="hide-text">{item.description}</p>
-                                    <div className="tp-service-btn">
-                                       <Link href="/service-details">Read Out More
-                                          <i className="fa-solid fa-arrow-up-right"></i>
-                                       </Link>
-                                    </div>
-                                 </div>
-                              </div>
-                              // </SplideSlide>
-                           )}
-                        </div>
-                        {/* </Splide> */}
-                     </div>
-
-                  </div>
-
-                  <div className="row">
-                     <div className="col-lg-12">
-                        <div className="tp-service-all-btn text-center fadeUp">
-                           <Link className="tp-btn" href="/service-details">View all Services</Link>
-                        </div>
-                     </div>
-                  </div>
-
-               </div>
-            </section>
-
-            <section className="tp-fun-fact-area pt-80 pb-65 p-relative">
+            <section className="tp-fun-fact-area pt-60 pb-65 p-relative">
                <div className="container container-1400">
 
                   <div className="tp-fun-fact-shape">
@@ -163,24 +106,11 @@ const ServiceArea = () => {
                      <Image className="shape-2" src={fun_fact_shape_2} alt="theme-pure" />
                      <Image className="shape-3" src={fun_fact_shape_3} alt="theme-pure" />
                      <Image className="shape-4" src={fun_fact_shape_4} alt="theme-pure" />
-                     <Image className="shadow" src={fun_fact_shape_5} alt="theme-pure" />
+                     {/* <Image className="shadow" src={fun_fact_shape_5} alt="theme-pure" /> */}
                   </div>
 
                   <div className="row">
-                     <div className="col-lg-2 col-md-4">
-                        <div className="tp-fun-fact-wrapper-box">
-                           {counter_content.map((item, i) =>
-                              <div key={i} className="tp-fun-fact-wrapper">
-                                 <h3 className={`counter-title ${item.cls}`}>
-                                    <span data-purecounter-duration="4" className="purecounter">
-                                       <Count number={item.count} text={item.icon} />
-                                    </span></h3>
-                                 <p>{item.info}</p>
-                              </div>
-                           )}
-                        </div>
-                     </div>
-                     <div className="col-lg-4 col-md-8">
+                     <div className="col-lg-6 col-md-12">
                         <div className="tp-fun-fact-thumb p-relative">
                            <Image id="reload" src={reload_img} alt="scroll" />
                         </div>
@@ -189,31 +119,25 @@ const ServiceArea = () => {
                      <div className="col-lg-6 col-md-12">
                         <div className="tp-fun-fact-content">
                            <div className="tp-fun-fact-title-wrapper">
-                              <span className="tp-section-title__pre">
+                              {/* <span className="tp-section-title__pre">
                                  service <span className="title-pre-color">IT Solutions</span>
                                  <AngleArrow />
-                              </span>
-                              <h3 className="tp-section-title">Tech Change The World
+                              </span> */}
+                              <h3 className="tp-section-title">Unlocking Your Business Potential: Our Solutions Tailored Just for You
                                  <span className="title-left-shape">
                                     <LineArrowTwo />
                                  </span>
                               </h3>
-                              <p>
-                                 Our company provides a full range of services for the construction of <br /> private houses and cottages since 19
+                              <p style={{ color: "#fff" }}>
+                                 At {process.env.NEXT_PUBLIC_REACT_APP_NAME}, we understand that every business is unique, with its own set of challenges and opportunities. That's why we're committed to providing tailored solutions that perfectly align with your specific needs and goals.
+
+                                 With our expertise and dedication, we bring your projects to life, transforming ideas into tangible results. Whether it's streamlining processes, enhancing efficiency, or driving growth, we're here to empower your business every step of the way.
+
+                                 Our team works tirelessly to understand your business inside and out, ensuring that our solutions not only meet but exceed your expectations. From concept to execution, we're with you at every stage of the journey, delivering innovative and impactful solutions that propel your business forward.
+
+                                 So, let's meet your business needs together and embark on a journey of success. With our solutions, the possibilities are endless, and your business's potential knows no bounds.
                               </p>
-                              <ul>
-                                 <li>
-                                    <span> <GreenRightArrow /></span>
-                                    series of manual and semi-manual activities.
-                                 </li>
-                                 <li>
-                                    <span><GreenRightArrow /> </span>
-                                    onstruction is different from other industries.
-                                 </li>
-                              </ul>
-                              <div className="tp-fun-fact-btn">
-                                 <Link className="tp-btn" href="/service-details">Tell us How Can We Help</Link>
-                              </div>
+
                            </div>
                         </div>
                      </div>

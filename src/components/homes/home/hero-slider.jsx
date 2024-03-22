@@ -37,9 +37,9 @@ const slider_data = [
     bg_img: "/assets/img/heroImg.jpg",
     sub_title_1: "best",
     sub_title_2: "it solutions",
-    hero_title_1: "Kingstec",
+    hero_title_1: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
     hero_title_2: "",
-    hero_support: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
+    // hero_support: "Empowering Tomorrow, Today: Transforming Tech into Tangible Solutions",
   },
 ];
 // shapes 
@@ -72,33 +72,26 @@ const HeroSlider = () => {
                     <div className="container">
                       <div className="tp-hero-1">
                         <div className='row'>
-                          <div className="col-lg-5">
-                            <div className="tp-hero-content">
-                              <div className="tp-hero-title-wrapper">
-                                <h3 className="tp-hero-title">
-                                  {item.hero_title_1} <LineArrow />
-                                  <br />{" "}
-                                </h3>
-                                <p className="title-text-transparent">
-                                  {item.hero_support}
-                                </p>
-                                <div className="tp-hero-btn">
-                                  <Link className="tp-btn" href="/about">
-                                    Learn More{" "}
-                                    <i className="fa-regular fa-arrow-right-long"></i>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                           <div className='col-lg-7'>
                             <div className="tp-hero-bg"
                               style={{ backgroundImage: `url(${item.bg_img})` }}
                             ></div>
                           </div>
+                          <div className="col-lg-5">
+                            <div className="tp-hero-content">
+                              <div className="tp-hero-title-wrapper">
+                                <h4 className="tp-hero-title">
+                                  {item.hero_title_1} <LineArrow />
+                                  <br />{" "}
+                                </h4>
+                                <p className="title-text-transparent">
+                                  {item.hero_support}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      {/* </div> */}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -112,13 +105,7 @@ const HeroSlider = () => {
             <div className="tp-hero-service-shape">
               <Image src={service_shape} alt="theme-pure" />
             </div>
-            {/* <p>
-              Our company provides a full range of <span>services</span> for the
-              cons <br />
-              private houses and cottages since 19
-            </p> */}
             <p>{process.env.NEXT_PUBLIC_REACT_APP_NAME} offers comprehensive <span><a href=''>services</a></span> to streamline your financial journey.</p>
-            {/* <p>Our fintech startup offers comprehensive <a href=''>services</a> tailored to meet the financial needs of individuals and businesses alike. We specialize in providing innovative solutions designed to enhance financial management and empower our clients to achieve their goals. With a focus on cutting-edge technology and personalized support, we are committed to delivering excellence since our establishment.</p> */}
             <div className="tp-hero-service-quote">
               <Image src={service_quote} alt="theme-pure" />
             </div>

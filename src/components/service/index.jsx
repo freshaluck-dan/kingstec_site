@@ -8,6 +8,7 @@ import BrandArea from "@/src/common/brand-area";
 import BlogArea from "@/src/common/blog-area";
 import FooterContact from "@/src/layout/footers/footer-contact";
 import FooterThree from "@/src/layout/footers/footer-3";
+import Footer from "@/src/layout/footers/footer";
 
 const Sevice = () => {
   return (
@@ -20,9 +21,9 @@ const Sevice = () => {
             <IndustryArea service={true} />
             <BrandArea service={true} />
             <BlogArea service={true} />
-            <FooterContact />
+            {/* <FooterContact /> */}
       </main>
-      <FooterThree />
+      <Footer />
     </>
   );
 };

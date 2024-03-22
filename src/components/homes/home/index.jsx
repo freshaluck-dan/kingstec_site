@@ -3,7 +3,7 @@ import React from "react";
 import HeroSlider from "./hero-slider";
 import AboutArea from "./about-area";
 import FeatureArea from "./feature-area";
-import ServiceArea from "./service-area"; 
+import ServiceArea from "./service-area";
 import BrandArea from "./brand-area";
 import SupportArea from "./support-area";
 import TestimonialArea from "./testimonial-area";
@@ -11,6 +11,8 @@ import SliderArea from "./slider-area";
 import FaqArea from "./faq-area";
 import BlogArea from "./blog-area";
 import Footer from "@/src/layout/footers/footer";
+import IndustryArea from "@/src/common/industry-area";
+import BrandTag from "./BrandTag";
 
 const HomeOne = () => {
   return (
@@ -18,15 +20,11 @@ const HomeOne = () => {
       <HeaderOne />
       <main>
         <HeroSlider />
-        {/* <AboutArea /> */}
-        {/* <FeatureArea /> */}
+        <BrandTag />
         <ServiceArea />
-        <BrandArea />
-        <SupportArea />
-        <TestimonialArea />
+        <AboutArea />
+        {/* <SupportArea /> */}
         <SliderArea />
-        <FaqArea />
-        <BlogArea />
         <Footer />
       </main>
     </>

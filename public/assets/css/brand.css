@@ -1,0 +1,20 @@
+/* CSS */
+.tp-brand-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-brand-shape .shape-img {
+    border: 2px solid #000;
+    /* Set border width and color */
+    border-radius: 50%;
+    /* Optional: Set border-radius for rounded border */
+    margin: 5px;
+    /* Optional: Add margin between images */
+}
+
+.tp-brand-shape .shape-img:hover {
+    border-color: #ff0000;
+    /* Optional: Change border color on hover */
+}
