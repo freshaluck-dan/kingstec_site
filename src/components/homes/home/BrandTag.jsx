@@ -38,7 +38,7 @@ const BrandTag = () => {
                     <div className="row">
                         {support_content.map((item, i) =>
                             <div key={i} className="col-lg-4" style={{height: "20%", width: "33%"}}>
-                                <div className="d-flex p-relative fadeRight">
+                                <div className="tp-support-feature-item d-flex p-relative fadeRight">
                                     <div className="tp-support-feature-content">
                                         <h4 className="tp-support-feature-content-title"><b>{item.title}</b></h4>
                                         <p>{item.info}</p>

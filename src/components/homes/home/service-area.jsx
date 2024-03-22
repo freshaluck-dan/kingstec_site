@@ -119,23 +119,13 @@ const ServiceArea = () => {
                      <div className="col-lg-6 col-md-12">
                         <div className="tp-fun-fact-content">
                            <div className="tp-fun-fact-title-wrapper">
-                              {/* <span className="tp-section-title__pre">
-                                 service <span className="title-pre-color">IT Solutions</span>
-                                 <AngleArrow />
-                              </span> */}
                               <h3 className="tp-section-title">Unlocking Your Business Potential: Our Solutions Tailored Just for You
                                  <span className="title-left-shape">
                                     <LineArrowTwo />
                                  </span>
                               </h3>
                               <p style={{ color: "#fff" }}>
-                                 At {process.env.NEXT_PUBLIC_REACT_APP_NAME}, we understand that every business is unique, with its own set of challenges and opportunities. That's why we're committed to providing tailored solutions that perfectly align with your specific needs and goals.
-
-                                 With our expertise and dedication, we bring your projects to life, transforming ideas into tangible results. Whether it's streamlining processes, enhancing efficiency, or driving growth, we're here to empower your business every step of the way.
-
-                                 Our team works tirelessly to understand your business inside and out, ensuring that our solutions not only meet but exceed your expectations. From concept to execution, we're with you at every stage of the journey, delivering innovative and impactful solutions that propel your business forward.
-
-                                 So, let's meet your business needs together and embark on a journey of success. With our solutions, the possibilities are endless, and your business's potential knows no bounds.
+                                 {process.env.NEXT_PUBLIC_REACT_APP_NAME} offers personalized solutions tailored to each business's unique challenges and opportunities. With our expertise, dedication, and innovative approach, we transform ideas into tangible results, empowering businesses to streamline processes, enhance efficiency, and drive growth. Our team commits to understanding your business thoroughly, ensuring our solutions exceed expectations at every stage of the journey. Let's embark on a journey of success together, where possibilities are endless, and your business's potential knows no bounds.
                               </p>
 
                            </div>
