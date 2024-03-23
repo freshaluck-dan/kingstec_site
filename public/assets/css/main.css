@@ -92,6 +92,7 @@
 /*  1.1 Theme Default
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&display=swap");
 
 .tp-accordion .accordion-button .tp-accordion-plus,
 .tp-accordion .accordion-button .tp-accordion-plus::after,
@@ -124,10 +125,10 @@ li,
   /**
   @font family declaration
   */
-  --tp-ff-body: 'DM Sans', sans-serif;
-  --tp-ff-heading: 'Raleway', sans-serif;
-  --tp-ff-poppins: 'Poppins', sans-serif;
-  --tp-ff-p: 'DM Sans', sans-serif;
+  --tp-ff-body: 'Poppins';
+  --tp-ff-heading: 'Poppins';
+  --tp-ff-poppins: 'Poppins';
+  --tp-ff-p: 'Poppins';
   --tp-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @font size declaration

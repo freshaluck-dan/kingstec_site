@@ -1,5 +1,6 @@
 import '@/src/styles/index.scss'
 // import "@assets/css/brand.css"
+import "@/src/components/homes/home/component/Slider.css"
 import '@/src/components/homes/home/component/Carousel.css'
 
 if (typeof window !== "undefined") {

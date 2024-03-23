@@ -15,7 +15,7 @@ import shape_4 from "@assets/img/hero/shape-4.png";
 import shape_5 from "@assets/img/hero/shape-7.png";
 import service_shape from "@assets/img/hero/shape-5.png";
 import service_quote from "@assets/img/hero/quot.png";
-import Carousel, { CarouselItem } from './component/Carousel';
+import Carousel from './component/Carousel';
 
 // slider setting 
 const setting = {

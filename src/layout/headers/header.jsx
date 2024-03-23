@@ -37,7 +37,7 @@ const HeaderOne = () => {
    return (
       <>
          <header className="tp-header-area tp-header-height p-relative">
-            <div className="tp-header-top tp-header-space d-none d-xl-block">
+            {/* <div className="tp-header-top tp-header-space d-none d-xl-block">
                <div className="container-fluid">
                   <div className="row align-items-center">
                      <div className="col-xxl-6 col-xl-8">
@@ -67,7 +67,7 @@ const HeaderOne = () => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
             <div id="header-sticky"
                className={`tp-header-bottom header__sticky p-relative ${sticky && "tp-header-sticky"}`} style={{ paddingLeft: "130px" }}>
                <div className="tp-header-bottom-space p-relative">
