@@ -36,9 +36,9 @@ const { contact_us, contact_text, phone, info, mail_2, mail_phone, service_links
 const Footer = () => {
     return (
         <>
-            <footer className="tp-footer-area p-relative">
-                <div className="tp-footer-bg" style={{ backgroundImage: `url(/assets/img/footer/footer-bg.jpg)` }}></div>
-                <div className="tp-footer-top-shape" style={{ backgroundImage: `url(/assets/img/footer/footer-top-bg.png)` }}></div>
+            <footer className="tp-footer-area p-relative" style={{background: "#1A2859"}}>
+                {/* <div className="tp-footer-bg" style={{ backgroundImage: `url(/assets/img/footer/footer-bg.jpg)` }}></div>
+                <div className="tp-footer-top-shape" style={{ backgroundImage: `url(/assets/img/footer/footer-top-bg.png)` }}></div> */}
 
                 <div className="container container-large">
 

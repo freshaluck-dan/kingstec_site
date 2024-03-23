@@ -97,7 +97,7 @@ const ServiceArea = () => {
 
    return (
       <>
-         <div className="tp-service-funfact-box">
+         <div className="tp-service-funfact-box"  style={{background: "#1A2859"}}>
             <section className="tp-fun-fact-area pt-60 pb-65 p-relative">
                <div className="container container-1400">
 

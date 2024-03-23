@@ -37,37 +37,6 @@ const HeaderOne = () => {
    return (
       <>
          <header className="tp-header-area tp-header-height p-relative">
-            {/* <div className="tp-header-top tp-header-space d-none d-xl-block">
-               <div className="container-fluid">
-                  <div className="row align-items-center">
-                     <div className="col-xxl-6 col-xl-8">
-                        <div className="tp-header-top-info">
-                           <ul>
-
-                              <li>
-                                 <a href="mailto:technix@support.com"><span>
-                                    <i className="fa-solid fa-envelope"></i></span>kingstec92@gmail.com
-                                 </a>
-                              </li>
-
-                           </ul>
-                        </div>
-                     </div>
-                     <div className="col-xxl-6 col-xl-4">
-                        <div className="tp-header-top-right d-flex justify-content-end align-items-center">
-                           <div className="header-call">
-                              <a href="tel:01310-069824"><i className="fa-solid fa-phone"></i> +2349091748769</a>
-                           </div>
-                           <div className="header-social d-xxl-block d-none">
-                              <Link href="#"><i className="fa-brands fa-facebook"></i> Facebook</Link>
-                              <Link href="#"><i className="fa-brands fa-twitter"></i> Skype</Link>
-                              <Link href="#"><i className="fa-brands fa-linkedin"></i> Linkedin</Link>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> */}
             <div id="header-sticky"
                className={`tp-header-bottom header__sticky p-relative ${sticky && "tp-header-sticky"}`} style={{ paddingLeft: "130px" }}>
                <div className="tp-header-bottom-space p-relative">
@@ -98,8 +67,6 @@ const HeaderOne = () => {
                </div>
             </div>
          </header>
-         {/* <SearchPopup searchOpen={searchOpen} setSearchOpen={setSearchOpen} /> */}
-         {/* <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} /> */}
       </>
    );
 };
